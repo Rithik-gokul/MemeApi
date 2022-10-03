@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MemeApi/static/css/main.d529a4fa.css",
+    "main.js": "/MemeApi/static/js/main.beae75a0.js",
+    "index.html": "/MemeApi/index.html",
+    "main.d529a4fa.css.map": "/MemeApi/static/css/main.d529a4fa.css.map",
+    "main.beae75a0.js.map": "/MemeApi/static/js/main.beae75a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d529a4fa.css",
+    "static/js/main.beae75a0.js"
+  ]
+}
