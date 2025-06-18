@@ -1,0 +1,72 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  /* Add a fun background pattern */
+  background: repeating-linear-gradient(135deg, #fffbe7 0 20px, #ff61a6 20px 40px, #fffbe7 40px 60px, #fff700 60px 80px);
+  animation: bg-move 10s linear infinite;
+}
+
+@keyframes bg-move {
+  0% { background-position: 0 0; }
+  100% { background-position: 200px 200px; }
+}
+
+.MuiPaper-root {
+  /* Add a little wiggle for fun */
+  animation: wiggle 2s infinite ease-in-out;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+.MuiAvatar-root {
+  box-shadow: 0 0 24px 4px #ff61a6aa;
+}
+
+.MuiButton-root {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  letter-spacing: 2px;
+}
