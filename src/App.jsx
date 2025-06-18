@@ -59,21 +59,20 @@ function App() {
         </Toolbar>
       </AppBar>
       <Stack alignItems="center" spacing={2} sx={{ mt: 3 }}>
-        <Typography variant="h3" sx={{ 
-          fontWeight: 900, 
-          color: '#fff', 
-          textAlign: 'center', 
-          textShadow: '3px 3px #ff61a6',
-          mb: 2,
-          fontFamily: 'Comic Sans MS, Comic Sans, cursive'
-        }}>
-          How many can you go through without laughing? 😂
-        </Typography>
         <Paper elevation={12} sx={{ p: 3, borderRadius: 6, bgcolor: '#fffbe7', minWidth: 300, maxWidth: 450, textAlign: 'center', border: '4px dashed #ff61a6', position: 'relative' }}>
           <Avatar sx={{ bgcolor: '#ff61a6', width: 60, height: 60, mb: 1, mx: 'auto', border: '4px solid #fff700', position: 'absolute', left: -30, top: -30 }}>
             <EmojiEmotionsIcon sx={{ fontSize: 40, color: '#fff700' }} />
           </Avatar>
-          <Chip label={`Counter: ${count}`} color="secondary" icon={<CelebrationIcon />} sx={{ fontSize: 16, mb: 2, bgcolor: '#fff700', color: '#ff61a6', fontWeight: 700 }} />
+          <Typography variant="h6" sx={{ 
+            fontWeight: 700, 
+            color: '#ff61a6', 
+            mb: 2, 
+            textShadow: '1px 1px #fff700',
+            fontFamily: 'Comic Sans MS, Comic Sans, cursive'
+          }}>
+            How many can you go through without laughing? 😂
+          </Typography>
+          <Chip label={`Lost at: ${count}`} color="secondary" icon={<CelebrationIcon />} sx={{ fontSize: 16, mb: 2, bgcolor: '#fff700', color: '#ff61a6', fontWeight: 700 }} />
           {loading ? (
             <Box sx={{ my: 3 }}>
               <CircularProgress size={50} sx={{ color: '#ff61a6' }} />
